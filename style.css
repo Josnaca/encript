@@ -112,7 +112,7 @@ button{
     color: #0A3871;
     font-size: 32px;
     outline: none;
-    background-image: url(/asset/images/Muñeco.png);
+    background-image: url(/Muñeco.png);
     background-repeat: no-repeat;
     background-position: center;
 }
