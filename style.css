@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.texto_input::placeholder{color: #0A3871;}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.container{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around
+}
+
+.container_input{
+    height: 59rem;
+    width: 57.5rem;
+    margin: 2.5rem 0 2.5rem 2.5rem ;
+}
+.container_output{
+    background-color: white;
+    height: 59rem;
+    width: 25rem; 
+    margin: 2.5rem 2.5rem 0 0;
+    border-radius:  32px;
+}
+.texto_input{
+    background-color: #F3F5FC;
+    height: 40.5rem;
+    overflow: hidden;
+    width: 42.5rem ;
+    margin: 8rem 0 0 12.5rem;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    font-size: 32px;
+    outline: none;
+}
+
+#instrucciones{
+    margin-left: 12.5rem;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #495057;
+    margin-bottom: 8px
+}
+
+.two_buttons{
+    height: 4.19rem;
+    width: 42.5rem;
+    margin-left: 12.5rem;
+    gap:24px;
+    display: flex
+}        
+
+
+button{
+    height:4.19rem ;
+    width: 27.4rem;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+#encrip{
+    background-color:#0A3871 ;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+#decrip{
+    color: #0A3871;
+    background-color: D8DFE8;
+}
+
+#buscador{
+    margin: 15.19rem 2rem 2rem 2rem;
+}
+
+.texto_avisorio_out{
+    width: 21rem;
+    height: 7.625rem;
+    margin: 0 0 0 2rem;
+    display: block;
+    gap: 30px;
+}
+
+.no_mensaje{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ingrese_texto_no{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.mensaje{ 
+    overflow: hidden;
+    margin: 2rem 2rem 0 2rem;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    font-size: 32px;
+    outline: none;
+    background-image: url(/asset/images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media(max-width: 768px ){
+    .container{
+        display: block;
+    }
+    .container_input{
+        width: 47rem;
+        margin: 2.5rem 0 0 2.5rem ;
+        height: 57rem;
+    }
+
+    .two_buttons{
+        margin: 0;
+    }
+
+    .texto_input{
+        margin: 2.5rem 0 0 0;
+    }
+
+    #instrucciones{
+        margin: 0 0 1rem 0;
+    }
+
+    .logito{
+        padding: -20px;
+    }
+
+    #buscador{
+        display: none;
+    }
+
+    .container_output{
+        height: 8.35rem;
+        width: 43rem; 
+        margin: 0 0 0 2.5rem; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .mensaje{
+        background-image: none;
+        position: absolute;
+        height: 5rem;
+    }
+
+    .texto_avisorio_out{
+        margin: 0 0 0 2rem;
+        position: absolute;
+    }
+}
+
+@media(max-width: 375px ){
+    .logito{
+        display: none;
+    }
+
+    .container_input{
+        width: 22.2rem;
+        margin: 2.5rem 0 0 1rem ;
+        height: 37.5rem;
+    }
+
+    .texto_input{
+        height: 23.5rem;
+        width: 22.2rem ;
+        margin: 0;
+        border: 0;
+    }
+
+    .two_buttons{
+        margin: 0;
+        display: block;
+        gap: 5px;
+        width: 21.4rem;
+    }
+    button{
+        height:4.18rem ;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container_output{
+        height: 11.625rem;
+        width: 20.4375rem; 
+        margin: 0 0 0 1.5rem ; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .no_mensaje{
+        margin: 2rem 0 0 0;
+    }
+
+    .texto_avisorio_out{
+        margin: 0;
+    }
+}
